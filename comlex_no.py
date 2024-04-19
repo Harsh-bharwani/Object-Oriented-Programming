@@ -13,10 +13,8 @@ class Complex:
     def inverse(self):
         return Complex(self.x/(self.modulus()**2),self.y/(self.modulus()**2))
 c1=Complex(1,2)
-# c2=c1.inverse()
+c2=c1.inverse()
+print(c2.x, c2.y)
 
-# print(c1.x, c1.y)
-# print(c2.x, c2.y)
-print(c1.inverse())
     
     
