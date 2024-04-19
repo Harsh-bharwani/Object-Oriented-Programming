@@ -5,10 +5,6 @@ class point:
         self.y=y
         self.z=z
     def unit(self):
-        # li=[]
-        # li.append(self.x/(self.x**2 + self.y**2 + self.z**2)**(1/2))
-        # li.append(self.y/(self.x**2 + self.y**2 + self.z**2)**(1/2))
-        # li.append(self.z/(self.x**2 + self.y**2 + self.z**2)**(1/2))
         return (self.x/self.distance_from_origin(),self.y/self.distance_from_origin(),self.z/self.distance_from_origin())
     def distance_from_origin(self):
         return (self.x**2 + self.y**2 + self.z**2)**(1/2)
